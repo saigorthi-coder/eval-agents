@@ -1,0 +1,33 @@
+# Core evaluation framework (from this repo)
+# Install with: pip install -e ../aieng-eval-agents
+# aieng-eval-agents  ← local install
+
+# Langfuse SDK (core dependency)
+langfuse>=3.10.3
+
+# LLM providers for judge model
+openai>=2.8.1              # OpenAI-compatible client (also used for Gemini via base_url)
+google-generativeai>=0.7.0 # Direct Gemini SDK (optional fallback)
+
+# Settings and environment
+python-dotenv>=1.0.0
+pydantic>=2.12.0
+pydantic-settings>=2.12.0
+
+# Console UI and reporting
+rich>=13.9.0
+
+# SQL validation
+sqlparse>=0.5.0
+sqlglot>=28.6.0
+
+# HTTP and async utilities
+httpx>=0.27.0
+tenacity>=8.2.0
+
+# Data processing for results reporter
+numpy>=1.26.0
+
+# Jupyter notebook (optional, for analysis notebook)
+jupyter>=1.0.0
+nbformat>=5.9.0
